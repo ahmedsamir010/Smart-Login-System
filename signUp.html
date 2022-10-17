@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="React-icon.svg.png" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="content p-5 w-75 m-auto text-center">
+        <h2 class="mb-3 text-info">Smart Login System</h2>
+        <div class="mb-3 mt-3">
+          <input
+            type="text"
+            class="nameValue form-control bg-transparent text-white"
+            placeholder="Enter you name"
+          />
+          <!--  -->
+          <p class="d-none text-danger" id="errorName">
+            include at least 3 letters starting with capital, second name is
+            optional
+          </p>
+          <!--  -->
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="email"
+            class="emailValue form-control bg-transparent text-white"
+            placeholder="Enter you email"
+          />
+          <!--  -->
+          <p class="d-none text-danger" id="errorEmail">name@example.com</p>
+          <!--  -->
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="password"
+            class="passwordValue form-control bg-transparent text-white"
+            placeholder="Enter you Password"
+          />
+        </div>
+        <!--  -->
+        <p class="d-none text-danger" id="errorPassword">
+          you must strenth your password, from 5 to 15 characters
+        </p>
+        <!--  -->
+        <div class="printError text-center">
+          <!--  -->
+          <p class="text-success d-none" id="success">Success</p>
+          <!--  -->
+          <!--  -->
+          <p class="text-danger d-none mb-0" id="alreadyExist">
+            this account is exist ! Try another one.
+          </p>
+          <!--  -->
+
+          <p class="text-danger d-none mb-0" id="tryAgain">
+            signUp failed ! Try again
+          </p>
+          <!--  -->
+        </div>
+
+        <button
+          id="subBtn"
+          type="button"
+          class="btn-outline-info w-100 mb-3 mt-4"
+        >
+          Sign Up
+        </button>
+        <p class="text-white">
+          you have an accoount?
+          <a
+            href="index.html"
+            class="text-white text-decoration-none"
+            id="sign-in"
+            >Sign In</a
+          >
+        </p>
+        <a href="" class="btn w-25 d-none m-auto" id="btnSignIn">signin</a>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
